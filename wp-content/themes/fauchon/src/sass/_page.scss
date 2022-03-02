@@ -1,0 +1,145 @@
+.wp-block-columns {
+    max-width: 1000px;
+    margin: 3em auto 1.75em auto;
+    padding: 0 1em;
+
+    & > p {
+		margin-top: 0;
+	}
+}
+
+.wp-block-gallery {
+	margin-bottom: 1em;
+}
+
+.fc-shoplist-column {
+	& .wp-block-column.fc-border--main-color {
+		height: 180px;
+	}
+}
+
+.entry-content {
+	& .fc-section {
+		font-size: 0.9em;
+
+		&-content {
+			margin-bottom: 2em;
+
+			&_header {
+				flex-basis: 100%;
+			}
+
+			& h4 {
+				margin: 0;
+				font-size: 1.3em;
+				text-align: center;
+				color: var(--main-color);
+				font-family: var(--title-font);
+
+				& span {
+					display: block;
+					margin: 0.5em 0 0 0;
+				    font-size: 0.6em;
+					color: #000000;
+				}
+			}
+
+			& h5 {
+				margin: 0 0 1em 0;
+				font-size: 1.2em;
+				font-family: var(--title-font);
+				color: var(--main-color);
+			}
+		}
+	}
+
+	& .wp-block-image {
+		& .aligncenter {
+			margin: 0;
+			width: 100%;
+
+			& img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.fc-shoplist-column {
+		font-size: 15px;
+
+		& .wp-block-column.fc-border--main-color {
+			height: 200px;
+		}
+	}
+}
+
+
+@media screen and (max-width: 648px) {
+	.wp-block-columns {
+	    margin: 2em auto 1.75em auto;
+	}
+
+	.entry-content {
+		& .fc-column--reverse {
+			flex-direction: column-reverse;
+		}
+
+		.fc-section {
+			padding: 0;
+			margin-bottom: 3em;
+
+			&-header {
+				margin: 5em 0 2em 0;
+
+				&_title {
+					padding: 0 1em;
+				}
+			}
+
+			&-content {
+				margin-bottom: 1em;
+
+				& h4 {
+					margin: 0 0 1em 0;
+					padding: 0 2em;
+				}
+
+
+				&_innerLeft {
+					padding: 0 1em 1em 1em;
+				}
+
+				&_innerRight {
+					padding: 0 1em 1em 1em;
+				}
+			}
+
+			&_shopList {
+				& .fc-section-content {
+					& ul {
+						padding-left: 0;
+						flex-direction: column;
+
+						& > li {
+							width: 100%;
+							margin: 0 0 2em 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 599px) {
+	.fc-shoplist-column {
+		font-size: 16px;
+
+		& .wp-block-column.fc-border--main-color {
+			height: auto;
+		}
+	}
+}

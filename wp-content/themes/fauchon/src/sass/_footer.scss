@@ -1,0 +1,35 @@
+.fc {
+	&-footer {
+		padding: 2em 0;
+		width: 100%;
+		text-align: center;
+		background-color: var(--bg-color);
+
+		& ul {
+			display: flex;
+			justify-content: space-between;
+			width: 240px;
+			margin: 0 auto;
+			padding: 0;
+
+			li {
+				list-style: none;
+				font-size: 0.6em;
+
+				a {
+					display: block;
+					color: inherit;
+
+					&:hover {
+						color: var(--main-color);
+					}
+				}
+			}
+		}
+
+		& #copyright {
+			margin: 3em 0 0 0;
+			font-size: 0.4em;
+		}
+	}
+}

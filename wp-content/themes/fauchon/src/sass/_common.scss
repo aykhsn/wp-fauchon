@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'BlairLight';
+  src: url(assets/BlairITCStd-Light.otf);
+}
+@font-face {
+  font-family: 'pr';
+  src: url(assets/-pr6n-r.otf);
+}
+/********************
+ * Custom properties
+ ********************/
+:root {
+  --main-color: #ec008c; /* pink */
+  --text-light-color: #7e7e7e;
+  --border-light-color: #c5c5c5;
+  --bg-color: #eeeeee;
+  --title-font: BlairLight, sans-serif;
+}
+
+body {
+	font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.2s;
+	color: inherit;
+}
+
+h1, h2, h3, h4 {
+	margin: 2em 0 1em 0;
+	font-weight: normal;
+}
+
+ul,ol {
+	padding-left: 1em;
+
+	& > li {
+		margin-bottom: 0.5em;
+	}
+}
+
+a, a:focus, *:focus { outline:none; }
+
+.fc {
+	&-list-style--none {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		& > li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+	}
+
+	&-border--main-color {
+		padding: 2em!important;
+		border: 1px solid var(--main-color)!important;
+	}
+
+	&-header_margin--min {
+		margin: 0 0 1em!important;
+	}
+
+	&-text--pink {
+		color: var(--main-color);
+	}
+}
+
+@media screen and (max-width: 648px) {
+	.fc {
+		&-border--main-color {
+			padding: 1em!important;
+		}
+	}
+}
